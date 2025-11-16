@@ -1,401 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Do or Die! - Official Game Site</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Quest - Adventure Awaits</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Animated Background -->
-  <div class="animated-bg">
-    <div class="bg-gradient"></div>
-    <div class="bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-      <div class="shape shape-4"></div>
-    </div>
-  </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">Space Quest</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="features.html" class="nav-link">Features</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="gameplay.html" class="nav-link">Gameplay</a></li>
+                <li><a href="download.html" class="nav-link">Download</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Navigation -->
-  <header class="header">
-    <div class="container">
-      <div class="header-content">
-        <div class="logo">
-          <h1 class="logo-text">Do or Die!</h1>
-          <span class="logo-subtitle">Outsmart. Survive. Win.</span>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Embark on an Epic Space Adventure</h1>
+                <p class="hero-subtitle">Join the crew, complete missions, and uncover the mysteries of the galaxy</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Play Now</button>
+                    <button class="btn btn-secondary">Watch Trailer</button>
+                </div>
+            </div>
+            <div class="hero-character">
+                <div class="character"></div>
+            </div>
         </div>
-        <nav class="nav">
-          <a href="#about" class="nav-link">About</a>
-          <a href="#features" class="nav-link">Features</a>
-          <a href="#gameplay" class="nav-link">Gameplay</a>
-          <a href="#screenshots" class="nav-link">Screenshots</a>
-          <a href="#download" class="nav-link">Download</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </nav>
-      </div>
-    </div>
-  </header>
+        <div class="floating-elements">
+            <div class="floating-star star-1">⭐</div>
+            <div class="floating-star star-2">⭐</div>
+            <div class="floating-star star-3">⭐</div>
+            <div class="floating-star star-4">⭐</div>
+        </div>
+    </section>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h2 class="hero-title">
-            Welcome to <span class="highlight">Do or Die!</span>
-          </h2>
-          <p class="hero-description">
-            A fast-paced social deduction game where every move matters. Work together or betray your team – the choice is yours. Can you identify the saboteur before it's too late?
-          </p>
-          <div class="hero-stats">
-            <div class="hero-stat">
-              <div class="stat-value">10K+</div>
-              <div class="stat-label">Active Players</div>
+    <!-- Quick Links Section -->
+    <section class="quick-links">
+        <div class="container">
+            <h2 class="section-title">Explore Space Quest</h2>
+            <div class="links-grid">
+                <a href="about.html" class="link-card">
+                    <div class="link-icon">📖</div>
+                    <h3>About</h3>
+                    <p>Learn more about the game and its story</p>
+                </a>
+                <a href="features.html" class="link-card">
+                    <div class="link-icon">⭐</div>
+                    <h3>Features</h3>
+                    <p>Discover amazing game features</p>
+                </a>
+                <a href="gallery.html" class="link-card">
+                    <div class="link-icon">🖼️</div>
+                    <h3>Gallery</h3>
+                    <p>View stunning screenshots</p>
+                </a>
+                <a href="gameplay.html" class="link-card">
+                    <div class="link-icon">🎮</div>
+                    <h3>Gameplay</h3>
+                    <p>Learn how to play</p>
+                </a>
+                <a href="download.html" class="link-card">
+                    <div class="link-icon">⬇️</div>
+                    <h3>Download</h3>
+                    <p>Get the game now</p>
+                </a>
+                <a href="contact.html" class="link-card">
+                    <div class="link-icon">📧</div>
+                    <h3>Contact</h3>
+                    <p>Get in touch with us</p>
+                </a>
             </div>
-            <div class="hero-stat">
-              <div class="stat-value">5K+</div>
-              <div class="stat-label">Matches Played</div>
-            </div>
-            <div class="hero-stat">
-              <div class="stat-value">4.8★</div>
-              <div class="stat-label">Average Rating</div>
-            </div>
-          </div>
-          <div class="hero-buttons">
-            <a href="#download" class="btn btn-primary">Play Now</a>
-            <a href="#gameplay" class="btn btn-secondary">Learn More</a>
-          </div>
         </div>
-        <div class="hero-visual">
-          <div class="hero-card">
-            <div class="card-inner">
-              <div class="card-icon">🎮</div>
-              <h3>Ready to Play?</h3>
-              <p>Join thousands of players in the ultimate social deduction experience</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-hint">
-      <span>Scroll to explore</span>
-      <div class="scroll-arrow"></div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="section about">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">About the Game</h2>
-        <p class="section-subtitle">Discover what makes Do or Die! unique</p>
-      </div>
-      <div class="about-content">
-        <div class="about-text">
-          <p class="lead">
-            "Do or Die!" is an innovative social deduction game developed as a college project, inspired by the popular Among Us. The game challenges players to complete tasks while a secret saboteur tries to ruin everything. The only way to survive is to stay alert, communicate effectively, and trust no one!
-          </p>
-          <p>
-            Set in a futuristic space station, players must work together to complete various tasks and maintain the station's systems. However, one or more players are secretly saboteurs whose goal is to eliminate the crew without being discovered. The game combines strategy, deception, and quick thinking in an intense multiplayer experience.
-          </p>
-          <div class="about-features">
-            <div class="about-feature-item">
-              <span class="feature-check">✓</span>
-              <span>Free to play with no pay-to-win mechanics</span>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Space Quest</h4>
+                    <p>The ultimate space adventure experience. Join millions of players in the galaxy's most exciting game.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="gameplay.html">Gameplay</a></li>
+                        <li><a href="download.html">Download</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🎮</a>
+                    </div>
+                </div>
             </div>
-            <div class="about-feature-item">
-              <span class="feature-check">✓</span>
-              <span>Cross-platform compatibility</span>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Space Quest. All rights reserved. | Capstone Project by Akash Mukherjee</p>
             </div>
-            <div class="about-feature-item">
-              <span class="feature-check">✓</span>
-              <span>Regular updates and new content</span>
-            </div>
-            <div class="about-feature-item">
-              <span class="feature-check">✓</span>
-              <span>Active community and tournaments</span>
-            </div>
-          </div>
         </div>
-        <div class="about-image">
-          <div class="image-placeholder">
-            <div class="placeholder-content">
-              <span class="placeholder-icon">🎯</span>
-              <span>Game Preview</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section id="features" class="section features">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Game Features</h2>
-        <p class="section-subtitle">Everything you need for an amazing gaming experience</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">👥</div>
-          <h3 class="feature-title">4–10 Players</h3>
-          <p class="feature-description">Perfect for small groups or larger parties. Every match is different with dynamic player counts that keep the game fresh and exciting!</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🎭</div>
-          <h3 class="feature-title">Hidden Roles</h3>
-          <p class="feature-description">Crew vs. Saboteur mechanics keep every game intense and unpredictable. Master the art of deception or become the ultimate detective.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🗺️</div>
-          <h3 class="feature-title">Randomized Maps</h3>
-          <p class="feature-description">No two games are the same with procedurally generated environments. Explore new layouts and adapt your strategy each round.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">⚡</div>
-          <h3 class="feature-title">Optimized Performance</h3>
-          <p class="feature-description">Runs smoothly on basic PCs without compromising on visual quality. Enjoy seamless gameplay regardless of your hardware.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">💬</div>
-          <h3 class="feature-title">Voice & Text Chat</h3>
-          <p class="feature-description">Communicate with your team through integrated voice and text chat. Coordinate strategies or sow seeds of doubt.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon">🏆</div>
-          <h3 class="feature-title">Achievements & Rewards</h3>
-          <p class="feature-description">Unlock achievements, earn rewards, and climb the leaderboards. Show off your skills and compete with players worldwide.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gameplay Section -->
-  <section id="gameplay" class="section gameplay">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">How to Play</h2>
-        <p class="section-subtitle">Master the game in three simple steps</p>
-      </div>
-      <div class="gameplay-steps">
-        <div class="step-card">
-          <div class="step-number">01</div>
-          <h3 class="step-title">Join a Match</h3>
-          <p class="step-description">Create or join a game room with 4-10 players. Wait for the match to begin and discover your role - Crew Member or Saboteur.</p>
-        </div>
-        <div class="step-card">
-          <div class="step-number">02</div>
-          <h3 class="step-title">Complete Objectives</h3>
-          <p class="step-description">Crew members must complete tasks around the map while saboteurs try to eliminate them or sabotage the mission. Use your wits to survive!</p>
-        </div>
-        <div class="step-card">
-          <div class="step-number">03</div>
-          <h3 class="step-title">Win the Game</h3>
-          <p class="step-description">Crew wins by completing all tasks or identifying all saboteurs. Saboteurs win by eliminating enough crew members or preventing task completion.</p>
-        </div>
-      </div>
-      <div class="gameplay-tips">
-        <h3 class="tips-title">Pro Tips</h3>
-        <div class="tips-grid">
-          <div class="tip-item">
-            <span class="tip-icon">💡</span>
-            <p>Always have an alibi and stick to your story</p>
-          </div>
-          <div class="tip-item">
-            <span class="tip-icon">👀</span>
-            <p>Observe player behavior and movement patterns</p>
-          </div>
-          <div class="tip-item">
-            <span class="tip-icon">🤝</span>
-            <p>Form alliances but be ready to break them</p>
-          </div>
-          <div class="tip-item">
-            <span class="tip-icon">🎯</span>
-            <p>Complete tasks efficiently to gain trust</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Screenshots Section -->
-  <section id="screenshots" class="section screenshots">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Game Screenshots</h2>
-        <p class="section-subtitle">See the game in action</p>
-      </div>
-      <div class="screenshots-grid">
-        <div class="screenshot-card">
-          <div class="screenshot-image">
-            <div class="image-overlay">
-              <span class="overlay-text">Gameplay Scene 1</span>
-            </div>
-          </div>
-        </div>
-        <div class="screenshot-card">
-          <div class="screenshot-image">
-            <div class="image-overlay">
-              <span class="overlay-text">Gameplay Scene 2</span>
-            </div>
-          </div>
-        </div>
-        <div class="screenshot-card">
-          <div class="screenshot-image">
-            <div class="image-overlay">
-              <span class="overlay-text">Gameplay Scene 3</span>
-            </div>
-          </div>
-        </div>
-        <div class="screenshot-card">
-          <div class="screenshot-image">
-            <div class="image-overlay">
-              <span class="overlay-text">Gameplay Scene 4</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Download Section -->
-  <section id="download" class="section download">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Download & Play</h2>
-        <p class="section-subtitle">Get started in minutes</p>
-      </div>
-      <div class="download-content">
-        <div class="download-info">
-          <h3>Ready to start playing?</h3>
-          <p>Choose your platform and join thousands of players in the ultimate social deduction experience. The game is free to play and available on multiple platforms.</p>
-          <div class="download-features">
-            <div class="download-feature">
-              <span class="feature-badge">✓</span>
-              <span>No installation required for web version</span>
-            </div>
-            <div class="download-feature">
-              <span class="feature-badge">✓</span>
-              <span>Cross-platform multiplayer</span>
-            </div>
-            <div class="download-feature">
-              <span class="feature-badge">✓</span>
-              <span>Regular updates and new content</span>
-            </div>
-          </div>
-        </div>
-        <div class="download-buttons">
-          <a href="#" class="download-btn">
-            <div class="btn-content">
-              <span class="btn-icon">💻</span>
-              <div class="btn-text">
-                <span class="btn-title">Download for Windows</span>
-                <span class="btn-subtitle">v2.1.0 • 150 MB</span>
-              </div>
-              <span class="btn-arrow">→</span>
-            </div>
-          </a>
-          <a href="#" class="download-btn">
-            <div class="btn-content">
-              <span class="btn-icon">🌐</span>
-              <div class="btn-text">
-                <span class="btn-title">Play Web Version</span>
-                <span class="btn-subtitle">No download required</span>
-              </div>
-              <span class="btn-arrow">→</span>
-            </div>
-          </a>
-          <a href="#" class="download-btn">
-            <div class="btn-content">
-              <span class="btn-icon">📱</span>
-              <div class="btn-text">
-                <span class="btn-title">Mobile Version</span>
-                <span class="btn-subtitle">Coming Soon</span>
-              </div>
-              <span class="btn-arrow">→</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Get in Touch</h2>
-        <p class="section-subtitle">Have questions or feedback? We'd love to hear from you!</p>
-      </div>
-      <div class="contact-content">
-        <div class="contact-card">
-          <div class="contact-icon">📧</div>
-          <h3 class="contact-title">Email</h3>
-          <p class="contact-description">Send us an email for support, feedback, or collaboration inquiries.</p>
-          <a href="mailto:akash.m25043@nst.rishihood.edu.in" class="contact-link">akash.m25043@nst.rishihood.edu.in</a>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon">💻</div>
-          <h3 class="contact-title">GitHub</h3>
-          <p class="contact-description">Check out the source code, report issues, or contribute to the project.</p>
-          <a href="https://github.com/Akash10053218" target="_blank" class="contact-link">github.com/Akash10053218</a>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon">🎮</div>
-          <h3 class="contact-title">Community</h3>
-          <p class="contact-description">Join our community to connect with other players and stay updated.</p>
-          <a href="#" class="contact-link">Join Discord Server</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3 class="footer-title">Do or Die!</h3>
-          <p class="footer-description">The ultimate social deduction game experience. Outsmart, survive, and win!</p>
-        </div>
-        <div class="footer-section">
-          <h4 class="footer-heading">Quick Links</h4>
-          <ul class="footer-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#gameplay">How to Play</a></li>
-            <li><a href="#download">Download</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4 class="footer-heading">Resources</h4>
-          <ul class="footer-links">
-            <li><a href="#">Documentation</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4 class="footer-heading">Connect</h4>
-          <ul class="footer-links">
-            <li><a href="mailto:akash.m25043@nst.rishihood.edu.in">Email</a></li>
-            <li><a href="https://github.com/Akash10053218" target="_blank">GitHub</a></li>
-            <li><a href="#">Discord</a></li>
-            <li><a href="#">Twitter</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2025 Do or Die! | Made with ❤️ by <span class="footer-highlight">Akash Mukherjee</span></p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 </html>
+
