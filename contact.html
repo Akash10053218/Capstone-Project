@@ -1,139 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Do or Die</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DO or DIE! - Contact</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background: #10151c; 
+      color: white; 
+      line-height: 1.6;
+    }
+    header { 
+      background: #18202b; 
+      padding: 20px; 
+      border-bottom: 2px solid #0d1117;
+    }
+    nav { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 20px; 
+    }
+    nav a { 
+      color: #ccc; 
+      text-decoration: none; 
+      font-size: 16px;
+      padding: 5px 0;
+    }
+    nav a:hover { 
+      color: white; 
+    }
+    .container { 
+      max-width: 800px; 
+      margin: 0 auto; 
+      padding: 40px 20px; 
+    }
+    h1 {
+      color: #e14b4b;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    .contact-section {
+      background: #18202b;
+      padding: 40px;
+      border: 1px solid #2a3441;
+      margin-bottom: 30px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      color: #ccc;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    input, textarea { 
+      width: 100%; 
+      padding: 12px; 
+      margin-bottom: 10px; 
+      background: #0d1117; 
+      border: 1px solid #2a3441; 
+      color: white; 
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #e14b4b;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+    button { 
+      padding: 15px 40px; 
+      background: #e14b4b; 
+      border: none; 
+      color: white; 
+      cursor: pointer; 
+      font-size: 18px;
+      width: 100%;
+    }
+    button:hover { 
+      background: #c63c3c; 
+    }
+    .info-section {
+      background: #18202b;
+      padding: 30px;
+      border: 1px solid #2a3441;
+    }
+    .info-section h2 {
+      color: #e14b4b;
+      margin-top: 0;
+      font-size: 24px;
+    }
+    .info-section p {
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+    .info-section a {
+      color: #e14b4b;
+      text-decoration: none;
+    }
+    .info-section a:hover {
+      color: #c63c3c;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-text">Do or Die</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="features.html" class="nav-link">Features</a></li>
-                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li><a href="gameplay.html" class="nav-link">Gameplay</a></li>
-                <li><a href="download.html" class="nav-link">Download</a></li>
-                <li><a href="contact.html" class="nav-link active">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="characters.html">Characters</a>
+      <a href="howto.html">How to Play</a>
+      <a href="gallery.html">Screenshots</a>
+      <a href="download.html">Download</a>
+      <a href="contact.html">Contact</a>
     </nav>
+  </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 class="page-title">Get in Touch</h1>
-            <p class="page-subtitle">We'd love to hear from you. Reach out with questions, feedback, or just to say hello!</p>
-        </div>
-    </section>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p style="color: #ccc; font-size: 18px; margin-bottom: 30px;">Have questions, feedback, or need support? Get in touch with us!</p>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Connect With Us</h3>
-                    <p>Have questions, feedback, or want to join our community? We're here to help! Our support team is available 24/7 to assist you with any inquiries.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div>
-                                <strong>Email</strong>
-                                <p>support@spacequest.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div>
-                                <strong>Website</strong>
-                                <p>www.spacequest.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div>
-                                <strong>Discord</strong>
-                                <p>Join our Discord server</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div>
-                                <strong>Social Media</strong>
-                                <p>Follow us on all platforms</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="office-hours">
-                        <h4>Support Hours</h4>
-                        <p>Monday - Friday: 9:00 AM - 6:00 PM (GMT)</p>
-                        <p>Saturday - Sunday: 10:00 AM - 4:00 PM (GMT)</p>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>Send us a Message</h3>
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" placeholder="Enter your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" placeholder="Enter your email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" placeholder="What is this regarding?" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" placeholder="Tell us what's on your mind..." rows="6" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
+    <div class="contact-section">
+      <h2 style="color: #e14b4b; margin-top: 0;">Send us a Message</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
         </div>
-    </section>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
 
-    <!-- FAQ Section -->
-    <section class="faq-section">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>How do I report a bug?</h3>
-                    <p>You can report bugs through our contact form or by emailing support@spacequest.com. Please include as much detail as possible about the issue.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Is the game free to play?</h3>
-                    <p>Yes! Do or Die is free to play. We offer optional cosmetic purchases that don't affect gameplay.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Can I play with friends?</h3>
-                    <p>Absolutely! You can create private lobbies and invite friends, or join public matches together.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What platforms are supported?</h3>
-                    <p>Do or Die is available on Windows, macOS, Linux, iOS, and Android with cross-platform play support.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Do or Die. All rights reserved. | Capstone Project by Akash Mukherjee</p>
-        </div>
-    </footer>
+    <div class="info-section">
+      <h2>Other Ways to Reach Us</h2>
+      <p><strong>Email:</strong> <a href="mailto:support@dordie.com">support@dordie.com</a></p>
+      <p><strong>Discord:</strong> <a href="#">Join our Discord server</a></p>
+      <p><strong>Twitter:</strong> <a href="#">@DOrDieGame</a></p>
+      <p><strong>Reddit:</strong> <a href="#">r/DOrDie</a></p>
+      <p style="margin-top: 30px; color: #999; font-size: 14px;">We typically respond within 24-48 hours. For urgent issues, please use our Discord server for faster support.</p>
+    </div>
+  </div>
 </body>
 </html>
 

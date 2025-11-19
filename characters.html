@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DO or DIE! - Characters</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background: #10151c; 
+      color: white; 
+      line-height: 1.6;
+    }
+    header { 
+      background: #18202b; 
+      padding: 20px; 
+      border-bottom: 2px solid #0d1117;
+    }
+    nav { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 20px; 
+    }
+    nav a { 
+      color: #ccc; 
+      text-decoration: none; 
+      font-size: 16px;
+      padding: 5px 0;
+    }
+    nav a:hover { 
+      color: white; 
+    }
+    .container { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 40px 20px; 
+    }
+    h1 {
+      color: #e14b4b;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    .characters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+    .card { 
+      background: #18202b; 
+      padding: 30px; 
+      border: 1px solid #2a3441;
+    }
+    .card h2 {
+      color: #e14b4b;
+      margin-top: 0;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    .card p {
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+    .card ul {
+      color: #ccc;
+      margin: 0;
+      padding-left: 20px;
+    }
+    .card ul li {
+      margin-bottom: 8px;
+    }
+    .role-badge {
+      display: inline-block;
+      padding: 5px 12px;
+      background: #2a3441;
+      border: 1px solid #3a4551;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="characters.html">Characters</a>
+      <a href="howto.html">How to Play</a>
+      <a href="gallery.html">Screenshots</a>
+      <a href="download.html">Download</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Characters / Roles</h1>
+    <p style="color: #ccc; font-size: 18px; margin-bottom: 30px;">Each player is randomly assigned one of three roles at the start of each match. Your role determines your objectives and how you should play.</p>
+    
+    <div class="characters-grid">
+      <div class="card">
+        <div class="role-badge">TEAM: SURVIVORS</div>
+        <h2>Survivor</h2>
+        <p>The Survivor's goal is simple: complete all tasks and identify the Saboteurs before they eliminate everyone.</p>
+        <p><strong>Abilities:</strong></p>
+        <ul>
+          <li>Complete tasks to progress the mission</li>
+          <li>Vote to eliminate suspicious players</li>
+          <li>Report dead bodies to call emergency meetings</li>
+          <li>Use security cameras to monitor areas</li>
+        </ul>
+        <p><strong>Win Condition:</strong> Complete all tasks OR eliminate all Saboteurs</p>
+      </div>
+
+      <div class="card">
+        <div class="role-badge">TEAM: SABOTEURS</div>
+        <h2>Saboteur</h2>
+        <p>The Saboteur's mission is to eliminate Survivors and prevent task completion without being discovered.</p>
+        <p><strong>Abilities:</strong></p>
+        <ul>
+          <li>Sabotage tasks and systems</li>
+          <li>Eliminate Survivors when alone</li>
+          <li>Vent through the map quickly</li>
+          <li>See other Saboteurs (but can't communicate)</li>
+        </ul>
+        <p><strong>Win Condition:</strong> Eliminate Survivors until numbers are equal OR prevent task completion</p>
+      </div>
+
+      <div class="card">
+        <div class="role-badge">SPECIAL ROLE</div>
+        <h2>Detective</h2>
+        <p>The Detective is a special Survivor role with enhanced investigation abilities to find the truth.</p>
+        <p><strong>Abilities:</strong></p>
+        <ul>
+          <li>All Survivor abilities</li>
+          <li>Investigate players to gather clues</li>
+          <li>Access restricted information</li>
+          <li>Reveal one player's role per game</li>
+        </ul>
+        <p><strong>Win Condition:</strong> Same as Survivor, but with investigative advantage</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

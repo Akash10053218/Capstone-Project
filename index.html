@@ -1,91 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Do or Die - Battle Royale Game</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DO or DIE! - Home</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background: #10151c; 
+      color: white; 
+      line-height: 1.6;
+    }
+    header { 
+      background: #18202b; 
+      padding: 20px; 
+      border-bottom: 2px solid #0d1117;
+    }
+    nav { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 20px; 
+    }s
+    nav a { 
+      color: #ccc; 
+      text-decoration: none; 
+      font-size: 16px;
+      padding: 5px 0;
+    }
+    nav a:hover { 
+      color: white; 
+    }
+    .container { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 40px 20px; 
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #e14b4b;
+    }
+    .hero p {
+      font-size: 20px;
+      color: #ccc;
+      margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn { 
+      background: #e14b4b; 
+      padding: 15px 30px; 
+      border: none; 
+      color: white; 
+      cursor: pointer; 
+      font-size: 18px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover { 
+      background: #c63c3c; 
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 60px;
+    }
+    .feature-card {
+      background: #18202b;
+      padding: 25px;
+      border: 1px solid #2a3441;
+    }
+    .feature-card h3 {
+      color: #e14b4b;
+      margin-top: 0;
+    }
+    .feature-card p {
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-text">Do or Die</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="features.html" class="nav-link">Features</a></li>
-                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li><a href="gameplay.html" class="nav-link">Gameplay</a></li>
-                <li><a href="download.html" class="nav-link">Download</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="characters.html">Characters</a>
+      <a href="howto.html">How to Play</a>
+      <a href="gallery.html">Screenshots</a>
+      <a href="download.html">Download</a>
+      <a href="contact.html">Contact</a>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Survive the Ultimate Battle Royale</h1>
-                <p class="hero-subtitle">Drop into the arena, fight for survival, and be the last one standing</p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary">Play Now</button>
-                    <button class="btn btn-secondary">Watch Trailer</button>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="Pic.png" alt="Do or Die Game Character" class="hero-img">
-            </div>
-        </div>
-    </section>
+  <div class="container">
+    <div class="hero">
+      <h1>DO or DIE!</h1>
+      <p>A simple multiplayer game of trust and survival. Can you survive the deception?</p>
+      <a href="download.html" class="btn">Play Now</a>
+    </div>
 
-    <!-- Quick Links Section -->
-    <section class="quick-links">
-        <div class="container">
-            <h2 class="section-title">Explore Do or Die</h2>
-            <div class="links-grid">
-                <a href="about.html" class="link-card">
-                    <h3>About</h3>
-                    <p>Learn more about the game and its story</p>
-                </a>
-                <a href="features.html" class="link-card">
-                    <h3>Features</h3>
-                    <p>Discover amazing game features</p>
-                </a>
-                <a href="gallery.html" class="link-card">
-                    <h3>Gallery</h3>
-                    <p>View stunning screenshots</p>
-                </a>
-                <a href="gameplay.html" class="link-card">
-                    <h3>Gameplay</h3>
-                    <p>Learn how to play</p>
-                </a>
-                <a href="download.html" class="link-card">
-                    <h3>Download</h3>
-                    <p>Get the game now</p>
-                </a>
-                <a href="contact.html" class="link-card">
-                    <h3>Contact</h3>
-                    <p>Get in touch with us</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Do or Die. All rights reserved. | Capstone Project by Akash Mukherjee</p>
-        </div>
-    </footer>
+    <div class="features">
+      <div class="feature-card">
+        <h3>Multiplayer Action</h3>
+        <p>Play with friends or strangers in intense multiplayer matches where trust is everything.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Secret Roles</h3>
+        <p>Each player gets a secret role. Are you a Survivor, Saboteur, or Detective?</p>
+      </div>
+      <div class="feature-card">
+        <h3>Strategic Gameplay</h3>
+        <p>Bluff, deceive, and outsmart your opponents to achieve your objectives.</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
 

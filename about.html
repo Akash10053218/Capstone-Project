@@ -1,116 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Do or Die</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DO or DIE! - About</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background: #10151c; 
+      color: white; 
+      line-height: 1.6;
+    }
+    header { 
+      background: #18202b; 
+      padding: 20px; 
+      border-bottom: 2px solid #0d1117;
+    }
+    nav { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 20px; 
+    }
+    nav a { 
+      color: #ccc; 
+      text-decoration: none; 
+      font-size: 16px;
+      padding: 5px 0;
+    }
+    nav a:hover { 
+      color: white; 
+    }
+    .container { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 40px 20px; 
+    }
+    h1 {
+      color: #e14b4b;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #e14b4b;
+      font-size: 24px;
+      margin-top: 40px;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #ccc;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    .section {
+      background: #18202b;
+      padding: 30px;
+      margin-bottom: 30px;
+      border: 1px solid #2a3441;
+    }
+    ul {
+      color: #ccc;
+      line-height: 2;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-text">Do or Die</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link active">About</a></li>
-                <li><a href="features.html" class="nav-link">Features</a></li>
-                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-                <li><a href="gameplay.html" class="nav-link">Gameplay</a></li>
-                <li><a href="download.html" class="nav-link">Download</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="characters.html">Characters</a>
+      <a href="howto.html">How to Play</a>
+      <a href="gallery.html">Screenshots</a>
+      <a href="download.html">Download</a>
+      <a href="contact.html">Contact</a>
     </nav>
+  </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 class="page-title">About Do or Die</h1>
-            <p class="page-subtitle">Discover the story behind the galaxy's most thrilling adventure</p>
-        </div>
-    </section>
+  <div class="container">
+    <h1>About the Game</h1>
+    
+    <div class="section">
+      <h2>What is DO or DIE!?</h2>
+      <p>DO or DIE! is a bluffing and survival-based multiplayer game that pits players against each other in a battle of wits, deception, and strategy. Each player is assigned a secret role with unique objectives, creating an atmosphere of suspicion and intrigue.</p>
+      <p>Can you trust your teammates? Or are they working against you? In DO or DIE!, nothing is as it seems, and survival depends on your ability to read others while maintaining your own facade.</p>
+    </div>
 
-    <!-- About Content -->
-    <section class="about-page">
-        <div class="container">
-            <div class="about-main">
-                <div class="about-text-content">
-                    <h2>The Game</h2>
-                    <p>Do or Die is an intense battle royale game where 50 players fight for survival on a shrinking map. Land, loot, fight, and be the last one standing to claim victory.</p>
-                    <p>With fast-paced action, strategic gameplay, and thrilling combat, Do or Die offers an experience like no other. Every match is different, every decision matters, and only one player can emerge victorious.</p>
-                    <p>The game combines elements of strategy, deception, and teamwork in a unique space setting. Players must use their wits, observation skills, and communication abilities to succeed in this thrilling adventure.</p>
-                </div>
-                <div class="about-image-placeholder">
-                    <img src="picture.jpeg" alt="Do or Die Game" class="about-image">
-                </div>
-            </div>
+    <div class="section">
+      <h2>Game Features</h2>
+      <ul>
+        <li><strong>Multiple Roles:</strong> Play as Survivor, Saboteur, or Detective, each with unique abilities and goals</li>
+        <li><strong>Task System:</strong> Complete objectives to progress or sabotage them to hinder others</li>
+        <li><strong>Voting Mechanics:</strong> Discuss, debate, and vote to eliminate suspicious players</li>
+        <li><strong>Real-time Multiplayer:</strong> Connect with players worldwide in fast-paced matches</li>
+        <li><strong>Strategic Depth:</strong> Every decision matters in this game of psychological warfare</li>
+      </ul>
+    </div>
 
-            <div class="about-stats">
-                <div class="stat-card">
-                    <div class="stat-number">10M+</div>
-                    <div class="stat-label">Active Players</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">50+</div>
-                    <div class="stat-label">Unique Maps</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">4.8</div>
-                    <div class="stat-label">Star Rating</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">100+</div>
-                    <div class="stat-label">Countries</div>
-                </div>
-            </div>
-
-            <div class="story-section">
-                <h2>The Story</h2>
-                <div class="story-content">
-                    <p>In the year 2157, humanity has expanded across the galaxy, establishing space stations and colonies on distant planets. However, not all is peaceful in the cosmos. A mysterious organization has infiltrated various space missions, threatening the safety of crews across the galaxy.</p>
-                    <p>As a crew member aboard a space station, your mission is to complete tasks and ensure the safety of your team. But beware - among your crewmates, there may be impostors working to sabotage your mission. Trust no one, question everything, and work together to survive.</p>
-                    <p>Every mission is a test of your ability to work as a team, identify threats, and complete objectives under pressure. Will you be the hero who saves the day, or will you be the one who brings the mission to ruin?</p>
-                </div>
-            </div>
-
-            <div class="team-section">
-                <h2>Development Team</h2>
-                <div class="team-grid">
-                    <div class="team-card">
-                        <h3>Game Design</h3>
-                        <p>Our talented designers create immersive worlds and engaging gameplay experiences.</p>
-                    </div>
-                    <div class="team-card">
-                        <h3>Art & Graphics</h3>
-                        <p>Stunning visuals and character designs that bring the game to life.</p>
-                    </div>
-                    <div class="team-card">
-                        <h3>Programming</h3>
-                        <p>Expert developers ensuring smooth gameplay and seamless multiplayer experiences.</p>
-                    </div>
-                    <div class="team-card">
-                        <h3>Sound & Music</h3>
-                        <p>Atmospheric soundtracks and sound effects that enhance the gaming experience.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Do or Die. All rights reserved. | Capstone Project by Akash Mukherjee</p>
-        </div>
-    </footer>
+    <div class="section">
+      <h2>The Experience</h2>
+      <p>DO or DIE! combines elements of social deduction, strategy, and survival games into a unique experience. Whether you're working together to complete tasks or secretly sabotaging the mission, every match is different and full of tension.</p>
+      <p>Communication is key, but so is deception. Master the art of reading body language, analyzing behavior, and maintaining your cover to emerge victorious.</p>
+    </div>
+  </div>
 </body>
 </html>
 
