@@ -1,0 +1,94 @@
+/* How To Play Page Styles */
+.step-section {
+    background: var(--color-surface);
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: transform 0.3s ease;
+}
+
+.step-section:hover {
+    transform: translateX(5px);
+    border-color: var(--color-border-hover);
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(225, 75, 75, 0.3);
+}
+
+.step-content {
+    flex: 1;
+}
+
+.step-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--color-text);
+}
+
+.step-content p {
+    margin-bottom: 0;
+    color: var(--color-text-secondary);
+}
+
+.tips {
+    background: rgba(24, 32, 43, 0.5);
+    padding: 30px;
+    margin-top: var(--spacing-xl);
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-primary);
+    border-radius: 4px;
+}
+
+.tips h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.tips ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.tips ul li {
+    background: var(--color-bg);
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+}
+
+.tips ul li strong {
+    color: var(--color-primary);
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .step-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .step-number {
+        margin-bottom: 15px;
+    }
+}

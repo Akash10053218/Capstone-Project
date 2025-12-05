@@ -1,0 +1,783 @@
+/* =========================================
+   1. Global Styles & Reset
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #050505;
+    /* Default Dark */
+    color: #ecf0f1;
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode Overrides */
+body.light-mode {
+    background-color: #f5f6fa;
+    color: #2c3e50;
+}
+
+body.light-mode a {
+    color: inherit;
+}
+
+/* Toggle Button */
+#theme-toggle {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+    background: #1a1a1a;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+body.light-mode #theme-toggle {
+    background: #ffffff;
+    border-color: #c0392b;
+    color: #c0392b;
+}
+
+#theme-toggle:hover {
+    background: #e74c3c;
+    color: #050505;
+}
+
+body.light-mode #theme-toggle:hover {
+    background: #c0392b;
+    color: #f5f6fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #050505;
+    color: #ecf0f1;
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.divider {
+    width: 60px;
+    height: 4px;
+    background-color: #e74c3c;
+    margin: 10px auto 0;
+}
+
+body.light-mode .divider {
+    background-color: #c0392b;
+}
+
+.btn-main,
+.btn-secondary,
+.btn-nav {
+    display: inline-block;
+    padding: 12px 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #e74c3c;
+    color: #ecf0f1;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-main:hover,
+.btn-nav:hover {
+    background-color: #e74c3c;
+    box-shadow: 0 0 15px #e74c3c;
+    color: #050505;
+}
+
+body.light-mode .btn-main:hover,
+body.light-mode .btn-nav:hover {
+    background-color: #c0392b;
+    box-shadow: 0 0 15px #c0392b;
+    color: #f5f6fa;
+}
+
+.btn-secondary {
+    border-color: #f1c40f;
+}
+
+.btn-secondary:hover {
+    background-color: #f1c40f;
+    color: #050505;
+    box-shadow: 0 0 15px #f1c40f;
+}
+
+/* =========================================
+   3. Navigation (Sticky)
+   ========================================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    /* Keep navbar dark transparent */
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: padding 0.3s ease;
+}
+
+.logo {
+    font-family: 'Nosifer', cursive;
+    font-size: 1.8rem;
+    color: #e74c3c;
+    text-shadow: 2px 2px 4px #000;
+}
+
+body.light-mode .logo {
+    color: #c0392b;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #ecf0f1;
+}
+
+.nav-links a:hover {
+    color: #e74c3c;
+}
+
+/* Light Mode Nav Overrides (Inside dark navbar, usually keeps light text, but let's be safe) */
+body.light-mode .nav-links a:hover {
+    color: #c0392b;
+}
+
+/* CSS-Only Mobile Nav */
+#nav-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ecf0f1;
+}
+
+.hamburger i {
+    pointer-events: none;
+}
+
+/* =========================================
+   4. Hero Section
+   ========================================= */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('../images/hero-bg.png') no-repeat center center/cover;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* Keep hero always dark for text contrast */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    margin: 20px 0 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Glitch Effect Animation */
+.glitch {
+    position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a0a0a;
+}
+
+.glitch::before {
+    left: 2px;
+    text-shadow: -1px 0 #e74c3c;
+    clip: rect(24px, 550px, 90px, 0);
+    animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+    left: -2px;
+    text-shadow: -1px 0 #c0392b;
+    clip: rect(85px, 550px, 140px, 0);
+    animation: glitch-anim 2.5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% {
+        clip: rect(10px, 9999px, 30px, 0);
+    }
+
+    20% {
+        clip: rect(60px, 9999px, 80px, 0);
+    }
+
+    40% {
+        clip: rect(20px, 9999px, 90px, 0);
+    }
+
+    60% {
+        clip: rect(80px, 9999px, 10px, 0);
+    }
+
+    80% {
+        clip: rect(40px, 9999px, 50px, 0);
+    }
+
+    100% {
+        clip: rect(70px, 9999px, 20px, 0);
+    }
+}
+
+@keyframes glitch-anim-2 {
+    0% {
+        clip: rect(60px, 9999px, 10px, 0);
+    }
+
+    20% {
+        clip: rect(10px, 9999px, 50px, 0);
+    }
+
+    40% {
+        clip: rect(90px, 9999px, 20px, 0);
+    }
+
+    60% {
+        clip: rect(30px, 9999px, 70px, 0);
+    }
+
+    80% {
+        clip: rect(50px, 9999px, 90px, 0);
+    }
+
+    100% {
+        clip: rect(20px, 9999px, 40px, 0);
+    }
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    opacity: 0.7;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* =========================================
+   5. Overview Section
+   ========================================= */
+.overview {
+    padding: 100px 0;
+    background-color: #050505;
+}
+
+body.light-mode .overview {
+    background-color: #f5f6fa;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.overview-text p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #bdc3c7;
+}
+
+body.light-mode .overview-text p {
+    color: #7f8c8d;
+}
+
+.mechanics-list {
+    margin-top: 30px;
+}
+
+.mechanics-list li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mechanics-list i {
+    color: #f1c40f;
+}
+
+.feature-img {
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* =========================================
+   6. Features Section (Grid)
+   ========================================= */
+.features {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #0a0a0a, #050505);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: #1a1a1a;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s, background 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body.light-mode .feature-card {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #e74c3c;
+}
+
+body.light-mode .feature-card:hover {
+    background: #ffffff;
+    border-color: #c0392b;
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+body.light-mode .feature-card i {
+    color: #c0392b;
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #bdc3c7;
+    font-size: 0.95rem;
+}
+
+body.light-mode .feature-card p {
+    color: #7f8c8d;
+}
+
+/* =========================================
+   7. Gameplay Preview (Slideshow)
+   ========================================= */
+.media {
+    padding: 100px 0;
+    background-color: #050505;
+}
+
+body.light-mode .media {
+    background-color: #f5f6fa;
+}
+
+.gallery-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow-x: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    /* Hide scrollbar IE */
+    scrollbar-width: none;
+    /* Hide scrollbar Firefox */
+}
+
+.gallery-container::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-slide {
+    min-width: 100%;
+    position: relative;
+    scroll-snap-align: center;
+}
+
+/* Hide unused buttons for CSS version */
+.prev-btn,
+.next-btn {
+    display: none;
+}
+
+
+
+.gallery-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    text-align: center;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background: #e74c3c;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+/* =========================================
+   8. Interactive Section
+   ========================================= */
+.interactive {
+    padding: 100px 0;
+    text-align: center;
+    background: url('https://placehold.co/1920x600/1a1a1a/333?text=Topography+Pattern') repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+body.light-mode .interactive {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.tip-generator {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #f39c12;
+}
+
+.tip-display {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1rem;
+    color: #f39c12;
+}
+
+/* =========================================
+   9. Footer
+   ========================================= */
+footer {
+    padding: 50px 0;
+    background-color: #000;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-logo {
+    font-family: 'Nosifer', cursive;
+    font-size: 1.5rem;
+    color: #bdc3c7;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    margin: 0 15px;
+    color: var(--text-secondary);
+}
+
+.social-links a:hover {
+    color: #e74c3c;
+}
+
+body.light-mode .social-links a:hover {
+    color: #c0392b;
+}
+
+/* =========================================
+   10. Survival HUD (Fixed)
+   ========================================= */
+.survival-hud {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 999;
+    width: 200px;
+}
+
+.stat-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stat-bar:last-child {
+    margin-bottom: 0;
+}
+
+.stat-bar i {
+    width: 25px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.health i {
+    color: #e74c3c;
+}
+
+.hunger i {
+    color: #e67e22;
+}
+
+.stamina i {
+    color: #f1c40f;
+}
+
+.bar-container {
+    flex-grow: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s;
+}
+
+.health .bar-fill {
+    background-color: #e74c3c;
+}
+
+.hunger .bar-fill {
+    background-color: #e67e22;
+}
+
+.stamina .bar-fill {
+    background-color: #f1c40f;
+}
+
+/* =========================================
+   11. Responsiveness
+   ========================================= */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .hamburger {
+        display: block;
+        z-index: 1002;
+    }
+
+    /* Target the nav-links based on checkbox state */
+    #nav-toggle:checked~.nav-links {
+        display: flex;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .nav-links {
+        position: fixed;
+        /* Changed to fixed for full screen overlay */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #000000;
+        display: none;
+        /* Hidden by default */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1000;
+    }
+
+    body.light-mode .nav-links {
+        background-color: #ffffff;
+    }
+
+}
+
+.overview-grid {
+    grid-template-columns: 1fr;
+}
+
+.gallery-container {
+    height: 300px;
+}
+
+.survival-hud {
+    bottom: 10px;
+    right: 10px;
+    width: 160px;
+    transform: scale(0.8);
+    transform-origin: bottom right;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+body.light-mode .survival-hud {
+    background: rgba(255, 255, 255, 0.8);
+}
+}
